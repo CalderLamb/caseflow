@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+venv/
+.venv/
+env/
+.env
+.env.local
+.env.production
+
+# Node
+node_modules/
+dist/
+.parcel-cache/
+*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker/
+
+# Alembic
+backend/alembic/versions/*.pyc
+
+# Test artifacts
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# Generated
+frontend/src/types/generated.ts
+openapi.json

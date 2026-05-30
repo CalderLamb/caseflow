@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-neutral-50 text-neutral-800;
+    margin: 0;
+  }
+
+  /* Hairline borders everywhere */
+  *, *::before, *::after {
+    border-color: rgba(161, 161, 170, 0.3);
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg border border-neutral-200/60 shadow-sm;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-medium;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium transition-colors;
+  }
+
+  .btn-primary {
+    @apply btn bg-neutral-800 text-white hover:bg-neutral-700;
+  }
+
+  .btn-secondary {
+    @apply btn bg-white border border-neutral-200 text-neutral-700 hover:bg-neutral-50;
+  }
+
+  .btn-danger {
+    @apply btn bg-critical-light border border-critical-border text-critical hover:bg-red-100;
+  }
+}
